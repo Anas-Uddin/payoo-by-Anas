@@ -25,12 +25,15 @@
             </div>
             <div class="divider"></div>
             <div>
-              <button class="btn btn-lg">Add money</button>
-              <button class="btn btn-lg">Cash Out</button>
+              <button id="btn-show-add-money" class="btn btn-lg">
+                Add money
+              </button>
+              <button id="btn-show-cashout" class="btn btn-lg">Cash Out</button>
             </div>
             <div class="divider"></div>
             <div
-              class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+              id="add-money-form"
+              class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
             >
               <form class="card-body">
                 <div class="form-control">
@@ -71,7 +74,10 @@
               </form>
             </div>
             <!-- cash out  -->
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div
+              id="cash-out-form"
+              class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+            >
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -117,5 +123,6 @@
     </main>
     <script src="js/home.js"></script>
     <script src="cashout.js"></script>
+    <script src="features.js"></script>
   </body>
 </html>

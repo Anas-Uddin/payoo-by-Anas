@@ -19,7 +19,7 @@
           <div class="artboard artboard-demo phone-1">
             <div class="stats shadow">
               <div class="stat">
-                <div class="stat-value">9400</div>
+                <div id="balance" class="stat-value">9400</div>
                 <div class="stat-desc">Available balance</div>
               </div>
             </div>
@@ -36,6 +36,7 @@
                     <span class="label-text">Add money</span>
                   </label>
                   <input
+                    id="input-add-money"
                     type="text"
                     placeholder="enter amount"
                     class="input input-bordered"
@@ -47,6 +48,7 @@
                     <span class="label-text">Pin</span>
                   </label>
                   <input
+                    id="input-pin-number"
                     type="password"
                     placeholder="enter pin"
                     class="input input-bordered"
@@ -60,7 +62,9 @@
                   </label>
                 </div>
                 <div class="form-control mt-6">
-                  <button class="btn btn-primary">Add money</button>
+                  <button id="btn-add-money" class="btn btn-primary">
+                    Add money
+                  </button>
                 </div>
               </form>
             </div>
